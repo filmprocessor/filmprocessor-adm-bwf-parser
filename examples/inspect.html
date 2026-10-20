@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>ADM/BWF Parser</title>
+<style>body{font:16px system-ui;max-width:52rem;margin:2rem auto;padding:0 1rem}pre{white-space:pre-wrap;overflow-wrap:anywhere}</style>
+<h1>ADM/BWF Parser</h1><p>Inspect a local WAV/BWF file, up to 64 MiB. Nothing is uploaded or played.</p>
+<input id="file" aria-label="WAV or BWF file" type="file" accept=".wav,.bwf"><pre id="result" role="status"></pre>
+<script type="module">
+import {parseADMBWF} from '../src/index.js';
+const input=document.querySelector('#file'),output=document.querySelector('#result');
+input.addEventListener('change',async()=>{const file=input.files[0];if(!file)return;try{if(file.size>64*1024*1024)throw Error('Demo file limit is 64 MiB');const r=parseADMBWF(await file.arrayBuffer());output.textContent=JSON.stringify({format:r.format,duration:r.duration,adm:r.adm},null,2);}catch(e){output.textContent=e.message;}});
+</script></html>

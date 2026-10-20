@@ -1,0 +1,41 @@
+{
+  "name": "@filmprocessor/adm-bwf-parser",
+  "version": "0.1.0",
+  "description": "Browser-first RIFF/RF64 PCM and ADM metadata parsing.",
+  "type": "module",
+  "exports": "./src/index.js",
+  "files": [
+    "src",
+    "examples",
+    "README.md",
+    "LICENSE",
+    "NOTICE",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "test:browser": "node --test test/browser.js"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filmprocessor/filmprocessor-adm-bwf-parser.git"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "homepage": "https://github.com/filmprocessor/filmprocessor-adm-bwf-parser#readme",
+  "bugs": {
+    "url": "https://github.com/filmprocessor/filmprocessor-adm-bwf-parser/issues"
+  },
+  "devDependencies": {
+    "playwright": "1.59.1"
+  },
+  "keywords": [
+    "adm",
+    "bwf",
+    "rf64",
+    "wav",
+    "audio"
+  ]
+}
