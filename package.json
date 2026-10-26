@@ -1,6 +1,6 @@
 {
   "name": "@filmprocessor/adm-bwf-parser",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Browser-first RIFF/RF64 PCM and ADM metadata parsing.",
   "type": "module",
   "exports": "./src/index.js",
@@ -16,7 +16,7 @@
     "test": "node --test test/*.test.js",
     "test:browser": "node --test test/browser.js"
   },
-  "license": "MIT",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/filmprocessor/filmprocessor-adm-bwf-parser.git"

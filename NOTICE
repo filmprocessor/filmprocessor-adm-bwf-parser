@@ -2,3 +2,7 @@ Copyright 2026 FilmProcessor.
 
 Extracted from FilmProcessor on 20 October 2026. This standalone package does
 not include application services, accounts, billing, storage or product UI.
+Copyright (c) 2026 Psyché Tropes Limited.
+
+Licensed under the Apache License, Version 2.0. See LICENSE.
+Original source: https://github.com/filmprocessor/filmprocessor-adm-bwf-parser

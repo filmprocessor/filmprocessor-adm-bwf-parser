@@ -60,4 +60,10 @@ example files on loopback and uploads no media.
 
 ## License
 
-MIT. See `LICENSE` and `NOTICE`.
+Apache-2.0. See `LICENSE` and `NOTICE`.
+
+## Licence history
+
+Version 0.2.0 adopts Apache License 2.0 for this project. Earlier published
+versions through 0.1.0 retain their MIT licence. Third-party dependencies
+retain their own licences. See `LICENSE` and `NOTICE`.
